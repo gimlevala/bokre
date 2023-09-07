@@ -1,0 +1,12 @@
+#!/bin/sh
+htt="https"
+bm="$(xclip -o -primary)"
+fil="$HOME/Documents/bookms"
+fil2="$HOME/Documents/httpss"
+
+if grep -lq "$bm" ~/Documents/bookms; then
+  notify-send -u critical "Jacob von Rammingen" "Bookmark already added :O"
+else
+	echo "§ $bm" >> "$fil"
+	notify-send "Jacob von Rammingen" "$bm added to bookmarks."
+fi

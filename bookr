@@ -1,0 +1,16 @@
+#!/bin/sh
+fil="$(cat -b $HOME/Documents/bookms)"
+
+reset='\033[0m'
+grey='\033[47m'
+black='\033[30m'
+bold='\033[1m'
+ob='\033[45m'
+gf='\033[37m'
+
+a="${reset}${grey}${bold}${black}"
+b="${reset}${ob}${bold}${gf}"
+
+echo -e "${b}         ##BOOKMARKS##       ${reset}"
+echo -e "${a} ${fil}"${reset}
+read -n 1 -s -r 
