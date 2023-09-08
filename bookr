@@ -13,4 +13,4 @@ b="${reset}${ob}${bold}${black}"
 
 echo -e "${b}         ##BOOKMARKS##       ${reset}"
 echo -e "${a} ${fil}"${reset}
-read -n 1 -s -r 
+read -n 1 -s -r -p " Press any key to close"
