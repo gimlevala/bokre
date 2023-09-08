@@ -1,12 +1,12 @@
 #!/bin/sh
-fil="$(cat -b $HOME/Documents/bookms)"
+fil="$(cat -b $HOME/.bokredoc)"
 
 reset='\033[0m'
 grey='\033[47m'
 black='\033[30m'
 bold='\033[1m'
-ob='\033[45m'
-gf='\033[37m'
+ob='\033[43m'
+gf='\033[30m'
 
 a="${reset}${grey}${bold}${black}"
 b="${reset}${ob}${bold}${gf}"

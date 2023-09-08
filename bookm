@@ -1,12 +1,12 @@
 #!/bin/sh
 htt="https"
 bm="$(xclip -o -primary)"
-fil="$HOME/Documents/bookms"
-fil2="$HOME/Documents/httpss"
+fil="$HOME/.bokredoc"
 
-if grep -lq "$bm" ~/Documents/bookms; then
+if grep -lq "$bm" ~/.bokredoc; then
   notify-send -u critical "Jacob von Rammingen" "Bookmark already added :O"
 else
 	echo "§ $bm" >> "$fil"
+	sort -b "$fil" -o "$fil"
 	notify-send "Jacob von Rammingen" "$bm added to bookmarks."
 fi
