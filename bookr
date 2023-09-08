@@ -1,7 +1,7 @@
 #!/bin/sh
 fil="$(cat -b $HOME/.bokredoc)"
 
-#Edit colors here, ob is the background color of of the bookmarks title 
+#Edit colors here, ob is the background color of the bookmarks title 
 reset='\033[0m'
 grey='\033[47m'
 black='\033[30m'
