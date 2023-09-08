@@ -6,10 +6,9 @@ grey='\033[47m'
 black='\033[30m'
 bold='\033[1m'
 ob='\033[43m'
-gf='\033[30m'
 
 a="${reset}${grey}${bold}${black}"
-b="${reset}${ob}${bold}${gf}"
+b="${reset}${ob}${bold}${black}"
 
 echo -e "${b}         ##BOOKMARKS##       ${reset}"
 echo -e "${a} ${fil}"${reset}
